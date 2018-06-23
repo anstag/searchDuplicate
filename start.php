@@ -30,6 +30,10 @@ foreach ($hashImg as $path1 => $item) {
         }
 
         if ($item == $match) {
+			if (!isset($duplicate[$item])) {
+        		$duplicate[$item] = [];
+        	}
+			
             if (!in_array($path1, $duplicate[$item])) {
                 $duplicate[$item][] = $path1;
             }
