@@ -47,7 +47,7 @@ foreach ($hashImg as $path1 => $item) {
 
 // write log file
 if (!empty($duplicate)) {
-    $f = fopen('log.txt', 'w');
+    $f = fopen($folder . '.txt', 'w');
 
     foreach ($duplicate as $item) {
         foreach ($item as $path) {
@@ -58,7 +58,7 @@ if (!empty($duplicate)) {
     fclose($f);
 }
 
-exit('[done] look log.txt');
+exit('[done] look ' . $folder .'.txt');
 
 
 
