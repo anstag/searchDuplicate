@@ -58,7 +58,7 @@ if (!empty($duplicate)) {
     fclose($f);
 }
 
-exit('[done] look ' . $folder .'.txt');
+exit('[done] look ' . $folder . '.txt');
 
 
 
