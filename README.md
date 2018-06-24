@@ -7,5 +7,5 @@ This php script searches for duplicate images in the specified folder and create
 php start.php needFolderName
 ```
 ### Final
-A file with paths for duplicates will be created (log.txt)
+A file with paths for duplicates will be created (needFolderName.txt)
  
